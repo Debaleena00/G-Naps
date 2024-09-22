@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    left: 0;
+}
+
+body {
+    padding-top: 80px;
+    background-color: #f4f4f4;
+}
+
+.logo h3 {
+    color: #004080;
+    font-size: 26px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #004080;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #FF8C00;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav a:hover {
+    background-color: transparent;
+    color: #004080; 
+}
+
+.top-pg {
+    background-image: url('https://img.freepik.com/premium-photo/container-cargo-ship-import-export-business-logistic-digital-world-map_35761-366.jpg?w=996');
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 48px; 
+    margin-top: -80px;
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    background-color: #004080;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.banner-button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #e07600;
+    transform: translateY(-3px);
+}
